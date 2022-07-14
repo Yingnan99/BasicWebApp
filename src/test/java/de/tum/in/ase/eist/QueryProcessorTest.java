@@ -30,4 +30,11 @@ class QueryProcessorTest {
 		}
 	}
 
+	@Test
+	void testKnowsAboutName() {
+		String actual = queryProcessor.process("name");
+		assertEquals("Yingnan", queryProcessor.process("name"));
+	}
+
+
 }
